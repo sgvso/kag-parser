@@ -133,6 +133,7 @@ export function parseIfElse(lines: string[]): [number, IfMacro | ElseMacro] {
         i += offset;
         break;
       }
+      case ';': break;
       default:
         inner.push(line);
         break;
